@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>BlueInnovation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+        .title {
+            font-size: 48px;
+            font-weight: bold;
+            color: #1a4fa3;
+        }
+        .disclaimer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: gray;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        img.logo {
+            height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="{{ url_for('static', filename='logo.png') }}" class="logo">
+        <div class="title">blueinnovation</div>
+    </div>
+
+    <div class="disclaimer">
+        This subdomain is being used by Tarlogic as part of a security assessment. The access, control, and content displayed on this page are carried out exclusively with the explicit permission of the owner of the main domain. If you have reached this page accidentally, no further action is required.
+    </div>
+
+</body>
+</html>
